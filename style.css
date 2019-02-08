@@ -1,0 +1,50 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #212F3D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+table {
+    background-color: #D5F5E3;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #212F3D;
+}
+
+th,
+caption {
+    text-transform: uppercase;
+}
+
+th,
+td,
+caption {
+    padding: 1em
+}
+
+input {
+    float: right;
+    height: 2rem;
+}
+
+button {
+    background-color: aquamarine;
+    border: 1px sold aqua;
+    box-shadow: none;
+    padding: 1em;
+    margin: 1em 5em;
+}
+
+.page {
+    display: inline-block;
+}
+
+.pagination {
+
+    text-align: center;
+}
