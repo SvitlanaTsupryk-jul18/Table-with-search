@@ -1,9 +1,9 @@
- axios.get('https://localhost:8080')
-//axios.get(`https://ma-cats-api.herokuapp.com/api/cats`)
+ //axios.get('https://localhost:8080')
+axios.get(`https://ma-cats-api.herokuapp.com/api/cats`)
 
     .then(function (response) {
-        let persons = response.data;
-        //let persons = response.data.cats;
+        //let persons = response.data;
+        let persons = response.data.cats;
         addinTable(persons);
         searcher(persons);
         pagination(persons);
@@ -38,8 +38,8 @@ function addinTable(personArr, page = 0) {
 
     tbody.innerHTML = "";
     for (let i = 0 + page * 10; i < 10 + page * 10; i++) {
-        tbody.innerHTML += `<tr><td> ${personArr[i].name}</td><td>${personArr[i].email}</td><td>${personArr[i].funds}</td><td>${personArr[i].city}</td><td>${personArr[i].city}</td>phone</tr>`;
-        //tbody.innerHTML += `<tr><td> ${personArr[i].name}</td><td>${personArr[i].price}</td><td>${personArr[i].category}</td><td>${personArr[i].id}</td></tr>`;
+        //tbody.innerHTML += `<tr><td> ${personArr[i].name}</td><td>${personArr[i].email}</td><td>${personArr[i].funds}</td><td>${personArr[i].city}</td><td>${personArr[i].city}</td>phone</tr>`;
+        tbody.innerHTML += `<tr><td> ${personArr[i].name}</td><td>${personArr[i].price}</td><td>${personArr[i].category}</td><td>${personArr[i].id}</td></tr>`;
     }
     table.appendChild(tbody);
     pageNum.innerHTML = page + 1;
