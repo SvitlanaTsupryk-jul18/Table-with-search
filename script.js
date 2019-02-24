@@ -39,7 +39,7 @@ function addinTable(personArr, page = 0) {
     tbody.innerHTML = "";
     for (let i = 0 + page * 10; i < 10 + page * 10; i++) {
         //tbody.innerHTML += `<tr><td> ${personArr[i].name}</td><td>${personArr[i].email}</td><td>${personArr[i].funds}</td><td>${personArr[i].city}</td><td>${personArr[i].city}</td>phone</tr>`;
-        tbody.innerHTML += `<tr><td> ${personArr[i].name}</td><td>${personArr[i].price}</td><td>${personArr[i].category}</td><td>${personArr[i].id}</td></tr>`;
+        tbody.innerHTML += `<tr><td> ${personArr[i].name}</td><td>${personArr[i].price}</td><td>${personArr[i].category}</td><td>${personArr[i].id}</td><td>${personArr[i].available}</td></tr>`;
     }
     table.appendChild(tbody);
     pageNum.innerHTML = page + 1;
